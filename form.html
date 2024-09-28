@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: antiquewhite;
+        }
+        .container {
+            width: 700px;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .containerh2 {
+            text-align: center;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .form-group img {
+            display: block;
+            margin: 0 auto 15px;
+            border-radius: 50%;
+            width: 100%; 
+        }
+        .btn-group {
+            text-align: center;
+        }
+        .btn-group button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #4CAF50;
+            color:white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn-group button:hover{
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Đăng ký thành viên</h1>
+        <form action="/submit-form" method="post">
+            <div class="form-group">
+                <img src="./57973e703b79bf22c8259b6c01168085.jpg" alt="Đăng ký thành viên">
+            </div>
+
+            <div class="form-group">
+                <label for="hoTen">Họ Tên</label>
+                <input type="text" id="hoTen" name="hoTen" required>
+            </div>
+
+
+            <div class="form-group">
+                <label for="ngaySinh">Ngày Sinh</label>
+                <input type="date" id="ngaySinh" name="ngaySinh" required>
+            </div>
+
+
+            <div class="form-group">
+                <label for="gioiTinh">Giới Tính</label>
+                <select id="gioiTinh" name="gioiTinh">
+                    <option value="nam">Nam</option>
+                    <option value="nu">Nữ</option>
+                    <option value="khac">Khác</option>
+                </select>
+            </div>
+
+
+            <div class="form-group">
+                <label for="soDienThoai">Số Điện Thoại</label>
+                <input type="tel" id="soDienThoai" name="soDienThoai" required>
+            </div>
+
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+
+            <div class="form-group">
+                <label for="tinhThanh">Tỉnh Thành</label>
+                <select id="tinhThanh" name="tinhThanh">
+                    <option value="hanoi">Hà Nội</option>
+                    <option value="hue">Huế</option>
+                    <option value="saigon">Sài Gòn</option>
+                </select>
+            </div>
+
+
+            <div class="form-group">
+                <label for="quanHuyen">Quận/Huyện</label>
+                <input type="text" id="quanHuyen" name="quanHuyen" required>
+            </div>
+
+
+            <div class="form-group">
+                <label for="phuongXa">Phường/Xã</label>
+                <input type="text" id="phuongXa" name="phuongXa" required>
+            </div>
+
+
+            <div class="btn-group">
+                <button type="submit">Đăng Ký</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
